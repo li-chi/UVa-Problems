@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath> 
+#include <string>
+
+int main()
+{	
+	string line;
+	std::getline (std::cin,line);
+	char c1,c2,c3,c4;
+	int i1,i2;
+	while (line.compare("0:00") != 0) {
+		if(str.at(1) == ':') {
+			i1 = atoi (str.at(0));
+			i2 = atoi(str.at(2)*10+str.at(3));
+		} else {
+			i1 = atoi(str.at(0)*10+str.at(1));
+			i2 = atoi(str.at(3)*10+str.at(4));
+		}
+
+		i1 = i1*30;
+		i2 = i2 * 6;
+		std::cout << abs(i1-i2) << std::endl;
+
+		std::getline (std::cin,line);
+	}
+}
